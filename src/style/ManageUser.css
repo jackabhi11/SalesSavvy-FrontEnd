@@ -1,0 +1,160 @@
+/* Container */
+.manage-container {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Title with gradient text */
+.manage-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Button wrapper */
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+/* Default buttons */
+.manage-btn {
+    padding: 10px 22px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: rgb(140, 6, 140);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease;
+    min-width: 150px;
+}
+
+/* Hover effect */
+.manage-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 126, 95, 0.7);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Active state (selected button) */
+.active-btn {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 126, 95, 0.9);
+    transform: scale(1.05);
+}
+
+/* Result section */
+.manage-result {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Loading GIF styling */
+.loading-gif {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.showCard {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height:55vh;
+}
+
+/* UserCard */
+
+/* Main Card */
+.user-card-unique {
+    width: 300px;
+    height: auto;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    transition: 0.35s ease;
+    margin: 10px auto;
+}
+
+/* Left Accent Strip */
+.user-accent {
+    width: 8px;
+    background: linear-gradient(180deg, rgb(140, 6, 140), #ff7e5f);
+}
+
+/* Content */
+.user-content {
+    padding: 12px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
+}
+
+/* Username */
+.user-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(90deg, rgb(140, 6, 140), #ff7e5f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Info Section */
+.user-info p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+    color: #000000;
+    letter-spacing: 0.3px;
+}
+
+.user-info span {
+    color: #feb47b;
+    font-weight: 600;
+}
+
+/* Remove Button */
+.remove-btn-unique {
+    margin-top: 2px;
+    align-self: flex-end;
+    padding: 9px 12px;
+    border-radius: 30px;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(90deg, #ff4d4d, #ff7e5f);
+    transition: 0.3s ease;
+}
+
+/* Button Hover */
+.remove-btn-unique:hover {
+    transform: scale(1.02);
+}
+
+/* Card Hover */
+.user-card-unique:hover {
+    transform: translateY(-6px);
+}
+
+

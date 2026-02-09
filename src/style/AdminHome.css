@@ -1,0 +1,158 @@
+.admin-main-div {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/1200x/6e/f5/22/6ef5227c40fb1011c37966d4f02e93a9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-div {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.left-nav-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(194, 56, 56);
+}
+
+.left-nav-div img{
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+}
+
+.right-nav-div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.link {
+    text-decoration: none;
+    background: none;
+    color:rgb(140, 6, 140);
+    border: none;
+    padding-right: 40px;
+    font-size: 23px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  right: 20px;
+  top: 30px;
+  background:rgb(140, 6, 140);
+  transition: width 0.3s ease;
+}
+
+.link:hover {
+    color: rgb(194, 56, 56);
+}
+
+.active{
+    color: rgb(194, 56, 56);
+}
+
+
+.right-nav-div-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-nav-div-profile span {
+    font-size: 20px;
+    font-weight: 550;
+    color: rgb(21, 72, 21);
+}
+
+.admin-panel-div {
+    margin-left: 4vw;
+    margin-top: 5vh;
+    width: 50vw;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-panel-div:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* admin home info div */
+
+.adminHomeInfo-div {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+/* Header & text */
+.adminHomeInfo-div h1 {
+  color: rgb(194, 56, 56);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.adminHomeInfo-div p {
+  max-width: 80%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #2c5c46;
+}
+
+/* Links */
+.adminHome-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.adminHome-links a {
+  text-decoration: none;
+  color: rgb(194, 56, 56);
+  background: rgba(208, 183, 183, 0.15);
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.adminHome-links a:hover {
+  background: rgba(157, 156, 156, 0.3);
+  color: rgb(140, 6, 140);
+  transform: translateY(-2px);
+}
+
+
+
+
+
+
+

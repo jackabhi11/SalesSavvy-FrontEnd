@@ -1,0 +1,147 @@
+.manage-product-div {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 4vh;
+}
+
+.manage-product-div h1 {
+    color: rgb(194, 56, 56);
+}
+
+.product-manage-link-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.m-link {
+    text-decoration: none;
+    font-size:1.3rem;
+    color: rgb(140, 6, 140);
+    background-color: transparent;
+    padding:5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(218, 229, 241);
+}
+
+.m-link:hover{
+  color: rgb(194, 56, 56);
+}
+
+.product-manage-link-div .active {
+    color: rgb(194, 56, 56);
+}
+
+.line {
+    border: 0.25px solid rgb(7, 120, 7);
+    width: 90%;
+    margin-left: 5%;
+}
+
+.admin-product-compo-div {    
+    padding: 2vh 2vw;
+}
+
+.admin-product-compo-div label{
+    float: left;
+}
+
+/* ShowProduct.jsx style */
+
+/* PRODUCT CARD MAIN WRAPPER */
+.product-card {
+  width: 100%;
+  aspect-ratio: 5 / 1; /* height:width → 1:5 */
+  display: flex;
+  gap: 20px;
+  padding: 18px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+  margin-top: 3vh;
+}
+
+/* LEFT IMAGE SECTION */
+.product-image {
+  flex: 1;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RIGHT INFORMATION SECTION */
+.product-details {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Meta info like price, category, id */
+.product-meta {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+}
+
+.product-meta span {
+  font-weight: 600;
+  color: #ae632a;  /* same as label color */
+}
+
+/* Description styling */
+.product-description {
+  color: rgb(128, 128, 128);
+  font-size: 0.95rem;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .product-card {
+    flex-direction: column;
+    aspect-ratio: unset;
+    height: auto;
+  }
+
+  .product-image {
+    height: 200px;
+  }
+}
+
+/* update section */
+
+.updateOption {
+  padding-top: 1.5vh;
+}
+
+.updateOption label{
+  display: flex;
+}
+
+.updateOption label input{
+  margin-right: -0.1vw;
+}
+
