@@ -77,92 +77,122 @@
 .cart_div {
     display: flex;
     gap: 2vw;
+    align-items: center;
 }
 
-/* ===============================
-   RESPONSIVE STYLES
-   =============================== */
+.log-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 3px;
+}
 
-/* Tablets (<= 1024px) */
+.log-container span {
+  font-weight: 550;
+}
+
+.userinfo-div {
+  display: flex;
+  align-items: center;
+}
+
+.userinfo-div-btn {
+  width: 70px;
+  height: 25px;
+  padding: 0;
+  font-size: 12px;
+  color: purple;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Fix overflow issue */
+.navbar_div {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ----------------------- */
+/* 📱 Tablet Responsive */
+/* ----------------------- */
+
 @media (max-width: 1024px) {
 
-  .navbar_div {
-    padding: 20px;
-  }
-
   .option_div {
-    gap: 3vw;
+      gap: 3vw;
   }
 
   .option_div_link {
-    font-size: 18px;
-    padding-right: 20px;
+      font-size: 18px;
+      padding-right: 20px;
   }
 
   .icon_div img {
-    width: 6vh;
-    height: 6vh;
+      width: 6vh;
+      height: 6vh;
   }
+
 }
 
-/* Mobile Devices (<= 768px) */
+
+/* ----------------------- */
+/* 📱 Mobile Responsive */
+/* ----------------------- */
+
 @media (max-width: 768px) {
 
-  .cus_main_div {
-    height: auto;
-    min-height: 100vh;
-  }
-
   .navbar_div {
-    flex-direction: column;
-    height: auto;
-    gap: 15px;
-    padding: 15px;
+      flex-direction: column;
+      height: auto;
+      padding: 15px;
+      gap: 10px;
   }
 
   .icon_div {
-    justify-content: center;
+      justify-content: center;
   }
 
   .option_div {
-    width: 100%;
-    justify-content: space-around;
-    gap: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
   }
 
   .option_div_link {
-    font-size: 16px;
-    padding-right: 0;
-  }
-
-  .option_div_link::after {
-    right: 0;
-    top: 24px;
+      font-size: 16px;
+      padding-right: 0;
   }
 
   .cart_div {
-    justify-content: center;
-    width: 100%;
+      justify-content: center;
+      gap: 15px;
+  }
+
+  .userinfo-div-btn {
+      width: 60px;
+      height: 22px;
+      font-size: 11px;
   }
 }
 
-/* Small Mobile (<= 480px) */
+
+/* ----------------------- */
+/* 📱 Small Mobile */
+/* ----------------------- */
+
 @media (max-width: 480px) {
 
-  .icon_div img {
-    width: 5vh;
-    height: 5vh;
-  }
-
-  .option_div {
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
   .option_div_link {
-    font-size: 14px;
+      font-size: 14px;
   }
+
+  .icon_div img {
+      width: 5vh;
+      height: 5vh;
+  }
+
 }
+
 
 /* ProductHome.jsx */
 
